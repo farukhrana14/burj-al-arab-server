@@ -39,6 +39,11 @@ client.connect((err) => {
   // client.close();
   console.log("db connected");
 
+  // Root API  
+  app.get('/', (req, res) => {
+    res.send('Error: 403, Access Denied.')
+  })
+
   //booking data to send to server
   app.post("/addBooking", (req, res) => {
     const newBooking = req.body;

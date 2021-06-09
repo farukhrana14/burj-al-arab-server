@@ -32,7 +32,7 @@ admin.initializeApp({
 
 
 
-//Mongo connection for the database
+//Mongo connection 
 client.connect((err) => {
   const bookings = client.db("burjAlArab").collection("bookings");
   // perform actions on the collection object
